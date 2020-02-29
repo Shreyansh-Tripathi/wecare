@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/borders"
+    tools:context=".Welcome">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wel"
+        android:layout_marginTop="110dp"
+        android:text="WELCOME"
+        android:textSize="40sp"
+        android:textColor="#443F3F"
+        android:layout_marginLeft="40dp"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/wel"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/round"
+        android:hint="  Your Name"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textColorHint="#252222" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/age"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/round"
+        android:hint="   Your age"
+        android:textColorHint="#252222"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:inputType="number"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/gender"
+        android:layout_below="@+id/age"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/round"
+        android:textColorHint="#252222"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:hint="   Gender"
+        />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/gender"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="185dp"
+        android:background="#524F4F"
+        android:gravity="center_horizontal"
+        android:text="Next"
+        android:textColor="#ffff"
+        android:paddingTop="9dp"
+        android:onClick="movetolog"
+        />
+</RelativeLayout>
